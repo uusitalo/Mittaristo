@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Button
+        android1:id="@+id/open"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_centerVertical="true"
+        android1:layout_toRightOf="@+id/close"
+        android1:text="Open" />
+
+    <Button
+        android1:id="@+id/send"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_centerVertical="true"
+        android1:layout_toRightOf="@+id/open"
+        android1:text="Send" />
+
+    <EditText
+        android1:id="@+id/entry"
+        android1:layout_width="fill_parent"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentLeft="true"
+        android1:layout_below="@+id/digitalClock1"
+        android1:layout_marginTop="42dp"
+        android1:layout_weight="1"
+        android1:background="@android:drawable/editbox_background"
+        android1:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <DigitalClock
+        android:id="@+id/digitalClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DigitalClock" />
+
+    <TextView
+        android1:id="@+id/label"
+        android1:layout_width="fill_parent"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentLeft="true"
+        android1:layout_below="@+id/close"
+        android1:layout_marginTop="35dp"
+        android1:text="Type here:"
+        android1:textSize="20sp" />
+
+    <Button
+        android1:id="@+id/close"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignBaseline="@+id/open"
+        android1:layout_alignBottom="@+id/open"
+        android1:text="Close" />
+
+</RelativeLayout>
